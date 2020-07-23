@@ -1,0 +1,114 @@
+.titulo {
+    background-image: url(../img/background.jpg);
+}
+
+.icon_pokemon {
+    padding: 12px;
+    animation-name: pokemon_cabezotas;
+    position: relative;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.icon_pokemon1 {
+    padding: 12px;
+    animation-name: pokemon_cabezotas1;
+    position: relative;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+nav {
+    text-align: center;
+}
+
+
+
+.tarjeta_imagen {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Play' !important;
+}
+
+.tarjeta_texto {
+    margin-left: 20px;
+}
+
+.tarjeta {
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.boton_central {
+    align-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+.grafios_1{
+    float: right;
+}
+.comparador_pokemon:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+.comparador_pokemon:active{
+    transform: rotate(180deg);
+    transition: all 2s;
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@keyframes pokemon_cabezotas {
+    0% {
+        right: 0px;
+    }
+
+    25% {
+        right: 280px;
+    }
+
+    50% {
+        right: 0px;
+    }
+
+    75% {
+        right: 280px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes pokemon_cabezotas1 {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 280px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    75% {
+        left: 280px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
