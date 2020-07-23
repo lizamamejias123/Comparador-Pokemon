@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokedex</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="container titulo ">
+      <img src="./assets/img/pikachu.svg" alt="" style="width: 100px;" class="icon_pokemon">
+      <img src="./assets/img/bullbasaur.svg" alt="" style="width: 100px;" class="icon_pokemon">
+      <img src="./assets/img/Pokemon-Logo.jpg" alt="" style="width: 200px;">
+      <img src="./assets/img/charmander.svg" alt="" style="width: 100px;" class="icon_pokemon1">
+      <img src="./assets/img/squirtle.svg" alt="" style="width: 100px;" class="icon_pokemon1">
+    </div>
+  </nav>
+  <h1 class="m-auto p-3" style="text-align: center;">Comparador Pokémon</h1>
+  <section id="tarjeta" class="row tarjeta">
+    <section class="tarjeta_primera container col-5">
+      <div class="card m-4">
+        <div class="card-body boton" id="input">
+          <h3>Ingresa número o nombre de un Pokémon (1)</h3>
+          <input type="text" placeholder="#Pokémon (1)" id="input_pokedex" class="form-control" style="margin: auto;">
+          <!-- <button id="buscador_pokedex" type="button" class="btn"><img style="width: 40px;"
+              src="./assets/img/method-draw-image.svg" alt=""> -->
+          </button>
+        </div>
+        <div id="tarjeta_primera">
+          <div class="tarjeta_imagen" id="tarjeta_imagen"></div>
+          <h5 class="tarjeta_texto" id="tarjeta_nombrepokemon"></h5>
+          <p class="tarjeta_texto" id="tarjeta_numeropokedex"></p>
+          <p class="tarjeta_texto" id="tarjeta_tipos"></p>
+          <p class="tarjeta_texto" id="tarjeta_pesoaltura"></p>
+          <br><br>
+          <div id="grafico"></div>
+        </div>
+
+    </section>
+    <section class="boton_central col-2">
+      <button id="comparador_pokemon" type="button" class="btn comparador_pokemon" data-toggle="tooltip"
+        title="Presiona aquí para comparar 2 Pokemones"><img style="width: 90px;" src="./assets/img/luchar.svg" alt="">
+      </button>
+    </section>
+    <section class="tarjeta_segunda container col-5">
+      <div class="card m-4">
+        <div class="card-body boton" id="input_1">
+          <h3>Ingresa número o nombre de un Pokémon (2)</h3>
+          <input type="text" placeholder="#Pokémon (2)" id="input_pokedex_1" class="form-control" style="margin: auto;">
+          <!-- <button id="buscador_pokedex_1" type="button" class="btn"><img style="width: 40px;"
+              src="./assets/img/method-draw-image.svg" alt=""> -->
+          </button>
+        </div>
+        <div>
+          <div class="tarjeta_imagen" id="tarjeta_imagen_1"></div>
+          <h5 class="tarjeta_texto" id="tarjeta_nombrepokemon_1"></h5>
+          <p class="tarjeta_texto" id="tarjeta_numeropokedex_1"></p>
+          <p class="tarjeta_texto" id="tarjeta_tipos_1"></p>
+          <p class="tarjeta_texto" id="tarjeta_pesoaltura_1"></p>
+          <br><br>
+          <div id="grafico_1" class="grafico_1"></div>
+        </div>
+    </section>
+
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
