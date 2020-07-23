@@ -4,5 +4,5 @@ Aplicacion Web creada gracias a Api Pokemon donde se obtienen datos y se pueden 
 ----
 ## Comparador Limpio
 <img src="assets/img/BG-1.png">
-## Comparador Ejemplo de 2 Pokemones
+Comparador Ejemplo de 2 Pokemones
 <img src="assets/img/BG-1.png">
